@@ -1,0 +1,1376 @@
+Library {
+  Name			  "Library_RCelements"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Tue Mar 27 18:29:44 2001"
+  Creator		  "Felipe Aristizabal"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "felipe"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Jun 22 16:36:04 2001"
+  ModelVersionFormat	  "1.%<AutoIncrement:33>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeLogAll		  on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Library_RCelements"
+    Location		    [17, 46, 469, 653]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    off
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "R+switch"
+      Ports		      [2, 1]
+      Position		      [35, 129, 150, 211]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Switch plus Resistor"
+      MaskPromptString	      "Resistance R"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "R1=@1;"
+      MaskInitialization      "x1 = [0.1 0.2 0.21:.02:0.43 0.44 0.6]+0.1;\ny1="
+" [0.8 0.8 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.80 0."
+"80];\nx2 = [0.2 0.7];\ny2 = [0.2 0.2];\nx3 = [0.7 0.7];\nx4 = [0.7 0.7];\ny3 "
+"= [0.8 0.6];\ny4 = [0.45 0.2];\nx5 = [0.7 0.77];\ny5 = [0.6 0.4];\n\n"
+      MaskDisplay	      "plot(x1,y1, x2, y2);\nplot(x3,y3);\nplot(x4,y4)"
+";\nplot(x5,y5);\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      System {
+	Name			"R+switch"
+	Location		[451, 326, 841, 463]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		off
+	Block {
+	  BlockType		  Inport
+	  Name			  "V_n-1"
+	  Position		  [25, 83, 55, 97]
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Switch"
+	  Position		  [200, 58, 230, 72]
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [235, 30, 250, 50]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [120, 70, 180, 110]
+	  ShowName		  off
+	  Gain			  "1/R1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch3"
+	  Position		  [275, 25, 305, 105]
+	  DropShadow		  on
+	  NamePlacement		  "alternate"
+	  FontName		  "Arial"
+	  FontWeight		  "bold"
+	  Threshold		  "-.5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "i_n"
+	  Position		  [335, 58, 365, 72]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "V_n-1"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch3"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "i_n"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "i"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  DstBlock		  "Switch3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Switch3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch3"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RC"
+      Ports		      [2, 2]
+      Position		      [35, 356, 150, 449]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Single RC"
+      MaskDescription	      "Single RC element"
+      MaskPromptString	      "Resistance|Capacitance|Initial Voltage accross "
+"the condensor"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "Rn=@1;Cn=@2;initVal=@3;"
+      MaskInitialization      "x1 = [0.1 0.2 0.21:.02:0.43 0.44 0.7]+0.1;\ny1="
+" [0.8 0.8 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.80 0."
+"80];\nx2 = [0.2 0.8];\ny2 = [0.2 0.2];\nx3 = [0.7 0.7];\nx4 = [0.7 0.7];\ny3 "
+"= [0.8 0.6];\ny4 = [0.55 0.2];\nx5 = [0.63 0.77];\ny5 = [0.6 0.6];\nx6 = [0.6"
+"3 0.77];\ny6 = [0.55 0.55];\n"
+      MaskDisplay	      "plot(x1,y1, x2, y2);\nplot(x3,y3);\nplot(x4,y4)"
+";\nplot(x5,y5);\nplot(x6,y6);\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "||"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"RC"
+	Location		[407, 348, 905, 648]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "V_n-1"
+	  Position		  [370, 35, 400, 45]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i_n+1"
+	  Position		  [95, 195, 125, 205]
+	  Orientation		  "up"
+	  Port			  "2"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [195, 136, 245, 184]
+	  ShowName		  off
+	  Gain			  "1/Cn"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain5"
+	  Position		  [200, 61, 245, 109]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Gain			  "1/Rn"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  Ports			  [1, 1]
+	  Position		  [275, 145, 305, 175]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "initVal"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	  Port {
+	    PortNumber		    1
+	    Name		    "V_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [100, 150, 120, 170]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_C"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [2, 1]
+	  Position		  [375, 75, 395, 95]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V_n"
+	  Position		  [370, 195, 400, 205]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "i_n"
+	  Position		  [95, 35, 125, 45]
+	  Orientation		  "up"
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "i_n+1"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "i_n"
+	  Labels		  [1, 1]
+	  SrcBlock		  "Gain5"
+	  SrcPort		  1
+	  Points		  [-85, 0]
+	  Branch {
+	    DstBlock		    "i_n"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "i_C"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V_n"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    DstBlock		    "V_n"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum4"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "V_n-1"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  DstBlock		  "Gain5"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RC Current"
+      Ports		      [2, 2]
+      Position		      [35, 471, 150, 569]
+      AncestorBlock	      "Library_RCelements/RC"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Single RC"
+      MaskDescription	      "Single RC element"
+      MaskPromptString	      "Resistance|Capacitance|Initial Voltage accross "
+"the condensor"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "Rn=@1;Cn=@2;initVal=@3;"
+      MaskInitialization      "x1 = [0.1 0.2 0.21:.02:0.43 0.44 0.7]+0.1;\ny1="
+" [0.8 0.8 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.80 0."
+"80];\nx2 = [0.2 0.8];\ny2 = [0.2 0.2];\nx3 = [0.7 0.7];\nx4 = [0.7 0.7];\ny3 "
+"= [0.8 0.6];\ny4 = [0.55 0.2];\nx5 = [0.63 0.77];\ny5 = [0.6 0.6];\nx6 = [0.6"
+"3 0.77];\ny6 = [0.55 0.55];\nt = [0:0.1:2*pi, 2*pi];\nx = 0.1*cos(t) + 0.3;\n"
+"y = 0.1*sin(t) + 0.5;\nx7 = [0.27 0.33 NaN 0.27 0.33 NaN 0.3 0.3];\ny7 = [0.4"
+"5 0.45 NaN 0.55 0.55 NaN 0.45 0.55];"
+      MaskDisplay	      "plot(x1,y1, x2, y2);\nplot(x3,y3);\nplot(x4,y4)"
+";\nplot(x5,y5);\nplot(x6,y6);\nplot(x,y);\nplot(x7,y7)\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "10|0.02|0"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"RC Current"
+	Location		[506, 424, 1004, 724]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "i_n-1"
+	  Position		  [35, 120, 65, 130]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i_n+1"
+	  Position		  [95, 230, 125, 240]
+	  Orientation		  "up"
+	  Port			  "2"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [195, 136, 245, 184]
+	  ShowName		  off
+	  Gain			  "1/Cn"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain5"
+	  Position		  [150, 75, 200, 125]
+	  ShowName		  off
+	  Gain			  "1/Rn"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  Ports			  [1, 1]
+	  Position		  [275, 145, 305, 175]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "initVal"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	  Port {
+	    PortNumber		    1
+	    Name		    "V_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [100, 150, 120, 170]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_C"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [360, 90, 380, 110]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V_n"
+	  Position		  [370, 195, 400, 205]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V_n-1"
+	  Position		  [380, 60, 410, 70]
+	  Orientation		  "up"
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  DstBlock		  "V_n-1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "i_n"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Gain5"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "i_n-1"
+	  SrcPort		  1
+	  Points		  [0, 25; 25, 0]
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "Gain5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "i_n+1"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "i_C"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V_n"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [60, 0]
+	  Branch {
+	    DstBlock		    "Sum2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [15, 0]
+	    DstBlock		    "V_n"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RC+Switch"
+      Ports		      [3, 1]
+      Position		      [40, 15, 150, 105]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RC + Switch"
+      MaskPromptString	      "Resisatnce|Capacitance|Initial Voltage"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "R=@1;C=@2;V0=@3;"
+      MaskInitialization      "x1= [0.1 0.2 0.21 0.23 0.25 0.27 0.29 0.31 0.33"
+" 0.34 0.40 0.50]+0.1;\ny1= [0.8 0.8 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.80 0"
+".80 0.90];\nx11 = [0.60 0.8];\ny11 = [0.8 0.8];\nx2 = [0.2 0.8];\ny2 = [0.2 0"
+".2];\nx3 = [0.7 0.7];\nx4 = [0.7 0.7];\ny3 = [0.8 0.6];\ny4 = [0.55 0.2];\nx5"
+" = [0.63 0.77];\ny5 = [0.6 0.6];\nx6 = [0.63 0.77];\ny6 = [0.55 0.55];\n"
+      MaskDisplay	      "plot(x1,y1, x2, y2, x11, y11);\nplot(x3,y3);\np"
+"lot(x4,y4);\nplot(x5,y5);\nplot(x6,y6);\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "||"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"RC+Switch"
+	Location		[158, 310, 644, 582]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "V_n-1"
+	  Position		  [385, 225, 415, 235]
+	  Orientation		  "up"
+	  Port			  "1"
+	  Interpolate		  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "V_n-1"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Switch"
+	  Position		  [75, 90, 105, 100]
+	  Port			  "2"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i_n+1"
+	  Position		  [200, 35, 230, 45]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  Port			  "3"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [105, 61, 120, 79]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [225, 155, 265, 195]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Gain			  "1/R"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i1"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain1"
+	  Position		  [270, 76, 320, 114]
+	  ShowName		  off
+	  Gain			  "1/C"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [350, 80, 380, 110]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "V0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	  Port {
+	    PortNumber		    1
+	    Name		    "V2"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [205, 85, 225, 105]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+|"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i3"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [2, 1]
+	  Position		  [390, 165, 410, 185]
+	  Orientation		  "left"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  Position		  [140, 55, 170, 135]
+	  Threshold		  "-.5"
+	  Port {
+	    PortNumber		    1
+	    Name		    "i1"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vn"
+	  Position		  [385, 25, 415, 35]
+	  Orientation		  "up"
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "i_n+1"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V_n-1"
+	  Labels		  [0, 0]
+	  SrcBlock		  "V_n-1"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "i1"
+	  Labels		  [1, 1]
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "i1"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [-110, 0; 0, -55]
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "i3"
+	  Labels		  [1, 1]
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Gain1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V2"
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    DstBlock		    "Vn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [1, 0]
+	    DstBlock		    "Sum4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain1"
+	  SrcPort		  1
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RC+Switch Current"
+      Ports		      [3, 2]
+      Position		      [35, 233, 145, 327]
+      AncestorBlock	      "Library_RCelements/RC+Switch"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RC + Switch"
+      MaskPromptString	      "Resisatnce|Capacitance|Initial Voltage"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "Rn=@1;Cn=@2;V0=@3;"
+      MaskInitialization      "x1= [0.1 0.2 0.21 0.23 0.25 0.27 0.29 0.31 0.33"
+" 0.34 0.40 0.50]+0.1;\ny1= [0.8 0.8 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.80 0"
+".80 0.90];\nx11 = [0.60 0.8];\ny11 = [0.8 0.8];\nx2 = [0.2 0.8];\ny2 = [0.2 0"
+".2];\nx3 = [0.7 0.7];\nx4 = [0.7 0.7];\ny3 = [0.8 0.6];\ny4 = [0.55 0.2];\nx5"
+" = [0.63 0.77];\ny5 = [0.6 0.6];\nx6 = [0.63 0.77];\ny6 = [0.55 0.55];\nt = ["
+"0:0.1:2*pi, 2*pi];\nx = 0.1*cos(t) + 0.3;\ny = 0.1*sin(t) + 0.5;\nx7 = [0.27 "
+"0.33 NaN 0.27 0.33 NaN 0.3 0.3];\ny7 = [0.45 0.45 NaN 0.55 0.55 NaN 0.45 0.55"
+"];"
+      MaskDisplay	      "plot(x1,y1, x2, y2, x11, y11);\nplot(x3,y3);\np"
+"lot(x4,y4);\nplot(x5,y5);\nplot(x6,y6);\nplot(x,y);\nplot(x7,y7)\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "10|0.2|0"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"RC+Switch Current"
+	Location		[41, 160, 613, 367]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "Switch"
+	  Position		  [35, 120, 65, 130]
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i_n-1"
+	  Position		  [35, 145, 65, 155]
+	  Port			  "2"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "i_n+2"
+	  Position		  [195, 150, 225, 160]
+	  Orientation		  "up"
+	  Port			  "3"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [50, 91, 65, 109]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [295, 101, 345, 149]
+	  ShowName		  off
+	  Gain			  "1/Cn"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain5"
+	  Position		  [250, 40, 300, 90]
+	  ShowName		  off
+	  Gain			  "Rn"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  Ports			  [1, 1]
+	  Position		  [375, 110, 405, 140]
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "V0"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	  Port {
+	    PortNumber		    1
+	    Name		    "V_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [200, 115, 220, 135]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_C"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [460, 55, 480, 75]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch1"
+	  Position		  [90, 85, 120, 165]
+	  Threshold		  "-.5"
+	  Port {
+	    PortNumber		    1
+	    Name		    "i1"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V_n"
+	  Position		  [510, 120, 540, 130]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "V_n-2"
+	  Position		  [510, 60, 540, 70]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "i_n-1"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "i1"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Switch1"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    Points		    [0, -60]
+	    DstBlock		    "Gain5"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Sum1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "V_n"
+	  Labels		  [2, 0]
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [0, 0; 60, 0]
+	  Branch {
+	    DstBlock		    "Sum3"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "V_n"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "i_C"
+	  Labels		  [1, 0]
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "i_n+2"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "i_n"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Gain5"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "V_n-2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  DstBlock		  "Switch1"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Subsystem"
+      Ports		      [1, 1]
+      Position		      [235, 20, 335, 70]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "Source Voltage|Resistance R1"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "V2=@1;R1=@2;"
+      MaskInitialization      "x1 = [0.1 0.2 0.21:.02:0.43 0.44 0.6]+0.1;\ny1="
+" [0.8 0.8 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.85 0.75 0.80 0."
+"80];\nx2 = [0.2 0.7];\ny2 = [0.2 0.2];\nx3 = [0.7 0.7];\nx4 = [0.7 0.7];\ny3 "
+"= [0.8 0.6];\ny4 = [0.50 0.2];\nx5 = [0.63 0.77];\ny5 = [0.6 0.6];\nx6 = [0.5"
+"8 0.82];\ny6 = [0.50 0.50];\n"
+      MaskDisplay	      "plot(x1,y1, x2, y2);\nplot(x3,y3);\nplot(x4,y4)"
+";\nplot(x5,y5);\nplot(x6,y6);\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "|"
+      MaskVariableAliases     ","
+      System {
+	Name			"Subsystem"
+	Location		[506, 99, 911, 251]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	AutoZoom		on
+	Block {
+	  BlockType		  Inport
+	  Name			  "V_n-1"
+	  Position		  [25, 98, 55, 112]
+	  Port			  "1"
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain4"
+	  Position		  [170, 85, 230, 125]
+	  ShowName		  off
+	  Gain			  "1/R1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "i_n"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum4"
+	  Ports			  [2, 1]
+	  Position		  [120, 95, 140, 115]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "-+|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Surce"
+	  Position		  [115, 25, 145, 55]
+	  Orientation		  "down"
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Value			  "V2"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "i_n"
+	  Position		  [350, 100, 380, 110]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  Name			  "i_n"
+	  Labels		  [2, 1]
+	  SrcBlock		  "Gain4"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "i_n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum4"
+	  SrcPort		  1
+	  DstBlock		  "Gain4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Surce"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "V_n-1"
+	  SrcPort		  1
+	  DstBlock		  "Sum4"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}
