@@ -1,4 +1,4 @@
-# Aristizabal, F. & Glavinovic M.I. (2004) Simulation and parameter estimation of dynamics of synaptic depression. *Biol. Cybern.* 90: 3-18.
+## Aristizabal, F. & Glavinovic M.I. (2004) Simulation and parameter estimation of dynamics of synaptic depression. *Biol. Cybern.* 90: 3-18.
 
 ## Model Description
 
